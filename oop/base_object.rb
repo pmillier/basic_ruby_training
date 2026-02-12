@@ -2,17 +2,18 @@
 class Animal
 	def initialize
 		@type = 'Animal'
+		@sound = 'Hello'
 	end
 
 	def present
-		puts "Hello, I am a #{@type}"
+		puts "#{@sound}, I am a #{@type}"
 	end
 
 end
 
 
 #inheritance
-class Dog
+class Dog < Animal
 
 	#getters shortcut
 	attr_reader :type
@@ -21,12 +22,12 @@ class Dog
 	attr_writer :type
 
 	def initialize
+		#parent initializer
+		super
 		@type = 'Dog'
+		@sound = 'Woof'
 	end
 
-	def present
-		puts "Woof, I am a #{@type}"
-	end
 
 end
 

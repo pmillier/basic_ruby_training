@@ -1,6 +1,5 @@
 
 
-
 arr = Array['Apple', 'Orange', 'Banana']
 
 puts arr
